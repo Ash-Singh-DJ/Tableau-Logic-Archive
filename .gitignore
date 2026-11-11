@@ -1,0 +1,11 @@
+# Tableau binaries and credentials never belong here
+*.twb
+*.twbx
+*.tds
+*.tdsx
+*.hyper
+.env
+
+# OS
+.DS_Store
+Thumbs.db

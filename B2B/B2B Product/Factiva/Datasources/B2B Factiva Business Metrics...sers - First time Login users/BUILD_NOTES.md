@@ -1,0 +1,30 @@
+# B2B Factiva Business Metrics: Registered and Active Users - First time Login users
+
+_Published data source with an Athena component._
+
+| | |
+|---|---|
+| Type | Published data source (.tdsx) |
+| Location | B2B / B2B Product / Factiva / Datasources |
+| Owner | James Thomson |
+| Created | 2025-09-14 |
+| Last updated | 2026-10-04 |
+| Tableau URL | https://us-east-1.online.tableau.com/#/site/dj-cdl-prod/datasources/98416351 |
+| Archived | 2026-11-11 |
+
+## How Athena is used
+
+- **Shape:** Standalone Custom SQL
+- **Extract:** yes (extract refreshed from the live connection)
+- **Connections:** Athena (AwsDataCatalog / dimension_external_db)
+- **Structure:**
+
+```
+- Athena Custom SQL "First Time Login" -> First Time Login.sql
+```
+- **Athena tables read:** `google_sheets_db.saml_master_list_b2b_current`, `fact_external_db.omniture_event_fact`, `dimension_external_db.pib_membership_dimension`
+- **SQL files:** [First Time Login.sql](First%20Time%20Login.sql)
+
+## Connected workbooks
+
+- [B2B Factiva Business Metrics: Registered and Active Users](../../B2B%20Factiva%20Business%20Metrics-%20Registered%20and%20Active%20Users) [B2B / B2B Product / Factiva]
